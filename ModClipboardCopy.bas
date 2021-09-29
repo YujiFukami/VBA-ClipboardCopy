@@ -10,7 +10,7 @@ Option Explicit
 '------------------------------
 
 
-Sub ClipboardCopy(ByVal InputClipText, Optional MessageIrunaraTrue As Boolean = False)
+Public Sub ClipboardCopy(ByVal InputClipText, Optional MessageIrunaraTrue As Boolean = False)
 '入力テキストをクリップボードに格納
 '配列ならば列方向をTabわけ、行方向を改行する。
 '20210719作成
