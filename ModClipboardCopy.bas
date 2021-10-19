@@ -16,8 +16,9 @@ Public Sub ClipboardCopy(ByVal InputClipText, Optional MessageIrunaraTrue As Boo
 '20210719作成
     
     '入力した引数が配列か、配列の場合は1次元配列か、2次元配列か判定
-    Dim HairetuHantei%
-    Dim Jigen1%, Jigen2%
+    Dim HairetuHantei As Integer
+    Dim Jigen1        As Integer
+    Dim Jigen2        As Integer
     If IsArray(InputClipText) = False Then
         '入力引数が配列でない
         HairetuHantei = 0
@@ -34,8 +35,11 @@ Public Sub ClipboardCopy(ByVal InputClipText, Optional MessageIrunaraTrue As Boo
     End If
     
     'クリップボードに格納用のテキスト変数を作成
-    Dim Output$
-    Dim I%, J%, K%, M%, N% '数え上げ用(Integer型)
+    Dim Output As String
+    Dim I      As Integer
+    Dim J      As Integer
+    Dim M      As Integer
+    Dim N      As Integer
     
     If HairetuHantei = 0 Then '配列でない場合
         Output = InputClipText
