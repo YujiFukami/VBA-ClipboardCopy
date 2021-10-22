@@ -3,11 +3,6 @@ Option Explicit
 
 'ClipboardCopy・・・元場所：FukamiAddins3.ModClipboard
 
-'------------------------------
-
-
-
-'------------------------------
 
 
 Public Sub ClipboardCopy(ByVal InputClipText, Optional MessageIrunaraTrue As Boolean = False)
